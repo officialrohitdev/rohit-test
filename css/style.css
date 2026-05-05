@@ -226,6 +226,7 @@
         font-weight: bold;
         color: var(--clr-dark);
         font-family: "Newsreader", serif;
+        margin: 0;
       }
 
       p {
