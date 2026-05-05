@@ -1,0 +1,375 @@
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 30px;
+  }
+
+  .banner-details {
+    h1 {
+      font-size: 70px;
+    }
+  }
+
+  .groups-content {
+    padding: 30px 40px;
+  }
+
+  .CelebratingElegance-deatils {
+    padding-left: 30px;
+  }
+
+  .counter-card {
+    max-width: 100%;
+  }
+
+  .banner-bottomCard {
+    margin-top: -110px;
+
+    &:after {
+      width: 50px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .banner-details {
+    h1 {
+      font-size: 60px;
+    }
+  }
+
+  .banner-img {
+    .circle {
+      width: 160px;
+      top: 110px;
+      left: 50px;
+
+      &.circle-2 {
+        width: 230px;
+        top: 0;
+        right: 90px;
+      }
+
+      &.circle-3 {
+        width: 140px;
+        top: 100px;
+        right: 40px;
+      }
+    }
+  }
+
+  .banner-bottomCard {
+    margin-top: -80px;
+
+    .profile-wrapper {
+      padding-right: 20px;
+    }
+  }
+
+  .review-wrapper {
+    padding-right: 0;
+    margin-top: 0;
+  }
+
+  .groups-content {
+    padding: 30px;
+
+    h6 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .funContest {
+    padding: 0 30px;
+
+    h6 {
+      font-size: 18px;
+    }
+  }
+
+  .secTitle {
+    h6 {
+      font-size: 18px;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    h3 {
+      font-size: 28px;
+      margin: 0 0 20px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  header {
+    min-height: auto;
+
+    &.headroom--unpinned {
+      transform: translateY(0);
+    }
+  }
+
+  .banner-img {
+    .circle {
+      width: 240px;
+      top: 110px;
+      left: 60px;
+
+      &.circle-2 {
+        width: 300px;
+        top: -20px;
+        right: 90px;
+      }
+
+      &.circle-3 {
+        width: 240px;
+        top: 100px;
+        right: 10px;
+      }
+    }
+  }
+
+  .banner-bottomCard {
+    margin-top: -150px;
+  }
+
+  .profile-wrapper {
+    padding-right: 120px;
+  }
+
+  .review-wrapper {
+    margin-top: 30px;
+  }
+
+  .reviewBottom-card {
+    flex-wrap: wrap;
+  }
+
+  .funContest {
+    padding: 0 50px;
+  }
+
+  .groups-content {
+    padding: 50px;
+  }
+
+  .social-buzzCard {
+    max-width: 60%;
+    margin-top: 0;
+    margin-left: 20px;
+  }
+
+  .fashion-img {
+    text-align: center;
+  }
+
+  .CelebratingElegance-deatils {
+    padding: 20px;
+  }
+
+  .fashion-img {
+    .tringle-arrow {
+      &._three {
+        bottom: 30px;
+      }
+    }
+  }
+
+  .fashion-wrapper {
+    padding: 80px 0 30px;
+  }
+
+}
+
+@media (max-width: 767.98px) {
+  header {
+    padding: 0;
+
+    .header-nav {
+      .navbar-brand {
+        img {
+          width: 100px;
+        }
+      }
+    }
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .top-banner {
+    padding-top: 100px;
+
+    .sunflower {
+      top: 80px;
+      width: 40px;
+    }
+  }
+
+  .banner-details {
+    & h1 {
+      font-size: 40px;
+
+      & div {
+        .heart-circle {
+          margin-left: -5px;
+          width: 40px;
+          height: 40px;
+
+          img {
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .banner-img {
+    .circle {
+      width: 100px;
+      top: 70px;
+      left: 0px;
+
+      &.circle-2 {
+        width: 150px;
+        top: 0px;
+        right: 50px;
+      }
+
+      &.circle-3 {
+        width: 90px;
+        top: 70px;
+        right: -20px;
+      }
+    }
+
+    .butterfly {
+      position: absolute;
+      top: 0px;
+      left: 30px;
+      width: 50px;
+      z-index: 6;
+    }
+  }
+
+  .banner-bottomCard {
+    margin-top: 0;
+
+    &:after {
+      display: none;
+    }
+
+    .profile-wrapper {
+      padding-right: 0;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+
+      .bannerCard {
+        top: 0;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .curve-arrow {
+    display: none;
+  }
+
+  .review-wrapper {
+    margin-top: 60px;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    .review-img {
+      margin: 0;
+    }
+  }
+
+  .review-profile {
+    .review-sunflower {
+      top: -30px;
+      right: 0;
+      width: 50px;
+    }
+  }
+
+  .reviewBottom-card {
+    border-radius: 30px;
+  }
+
+  .groups-content {
+    padding: 30px;
+  }
+
+  .funContest {
+    padding: 0 30px;
+    width: 100%;
+    margin: 0 0 30px;
+  }
+
+  .social-buzzCard {
+    max-width: 100%;
+    margin: 0 20px 20px;
+    border-radius: 20px;
+  }
+
+  .fashion-wrapper {
+    padding: 50px 0 30px;
+  }
+
+  .fashion-img {
+    .tringle-arrow {
+      &._three {
+        right: 70px;
+        bottom: 30px;
+      }
+    }
+  }
+
+  .secTitle {
+    h6 {
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin: 0 0 15px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .CelebratingElegance-deatils {
+    padding: 0;
+  }
+
+  .counter-card {
+    max-width: 100%;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 0 20px;
+  }
+  
+}

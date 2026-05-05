@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "satoshi", sans-serif;
+}
+
+:root {
+  --clr-primary: #58003F;
+  --clr-dark: #2A2A2A;
+  --clr-paragraph: #4B5563;
+  --clr-white: #fff;
+  --clr-primary-gradient: linear-gradient(90deg,rgba(95, 3, 69, 1) 0%, rgba(149, 20, 113, 1) 100%);
+  --clr-secondary-gradient: linear-gradient(145deg,rgba(255, 0, 31, 1) 20%, rgba(255, 255, 255, 1) 100%)
+}
+
+@font-face {
+  font-family: 'satoshi';
+  src: url('../font/satoshi.ttf') format('truetype');
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 16px;
+  color: var(--clr-dark);
+  background: linear-gradient(180deg,rgba(255, 231, 248, 1) 0%, rgba(255, 235, 215, 1) 75%);
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+p {
+  margin: 0 0 15px;
+  color: var(--clr-paragraph);
+}
+
+a {
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  color: var(--clr-dark);
+
+  &:hover {
+    text-decoration: none;
+    color: var(--clr-primary);
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* header */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  will-change: transform;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+
+  &.headroom--unpinned {
+    transform: translateY(-100%);
+  }
+
+  &.headroom--pinned {
+    transform: translateY(0%);
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+
+      img {
+        width: 150px;
+      }
+    }
+  }
+
+  &.sticky-header {
+    background: var(--clr-white);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
+    padding: 0;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: translate(-50%, -50%) rotate(1turn);
+  }
+}
+
+/* header end */
+
+
+/* Button */
+
+.ThemeBtn {
+  border: 0;
+  padding: 5px 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 56px;
+  background: var(--clr-primary-gradient);
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  color: var(--clr-white);
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  font-family: "satoshi", sans-serif;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  min-width: fit-content;
+  white-space: nowrap;
+
+  i {
+    font-size: 16px;
+  }
+
+  &:hover {
+    background: var(--clr-primary-gradient);
+    opacity: 0.9;
+    color: var(--clr-white);
+  }
+}
+
+/* Button end */
+
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.secTitle {
+  h6 {
+    font-size: 22px;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0x;
+  }
+
+  h2 {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: "Italiana", sans-serif;
+    color: var(--clr-primary);
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "Italiana", sans-serif;
+    margin: 0 0 25px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+/* scroll top */
+
+#scrollTotop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 25px;
+  right: -50px;
+  cursor: pointer;
+  z-index: 99;
+  transition: all 0.3s ease-in-out;
+  border: 0;
+  outline: none;
+  padding: 0;
+  background: transparent;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    background: var(--clr-primary-gradient);
+    left: -5px;
+    border-radius: 50px 0 0 50px;
+  }
+
+  &.showscroll {
+    right: 15px;
+  }
+
+  .ScrollArrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: var(--clr-white);
+    z-index: 99;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 15%);
+    transition: all 0.3s ease-in-out;
+    border: 0;
+    outline: none;
+    min-width: 30px;
+
+    i {
+      font-size: 20px;
+      color: var(--clr-dark);
+    }
+  }
+}
+
+/* scroll top */
