@@ -46,9 +46,9 @@
 
   .banner-img {
     .circle {
-      width: 160px;
-      top: 110px;
-      left: 50px;
+      width: 120px;
+      top: 70px;
+      left: 20px;
 
       &.circle-2 {
         width: 230px;
@@ -59,7 +59,7 @@
       &.circle-3 {
         width: 140px;
         top: 100px;
-        right: 40px;
+        right: 10px;
       }
     }
   }
@@ -240,9 +240,9 @@
 
   .banner-img {
     .circle {
-      width: 100px;
+      width: 120px;
       top: 70px;
-      left: 0px;
+      left: 10px;
 
       &.circle-2 {
         width: 150px;
@@ -253,14 +253,14 @@
       &.circle-3 {
         width: 90px;
         top: 70px;
-        right: -20px;
+        right: 10px;
       }
     }
 
     .butterfly {
       position: absolute;
       top: 0px;
-      left: 30px;
+      left: 50px;
       width: 50px;
       z-index: 6;
     }
@@ -319,14 +319,20 @@
 
   .funContest {
     padding: 0 30px;
-    width: 100%;
+    width: 50%;
     margin: 0 0 30px;
+  }
+
+  .fashionStore {
+    order: 3;
+    padding-left: 0;
   }
 
   .social-buzzCard {
     max-width: 100%;
     margin: 0 20px 20px;
     border-radius: 20px;
+    order: 4;
   }
 
   .fashion-wrapper {
@@ -371,5 +377,5 @@
     gap: 30px;
     margin: 0 0 20px;
   }
-  
+
 }

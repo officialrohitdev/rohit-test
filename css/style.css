@@ -12,6 +12,20 @@
 }
 
 .banner-details {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    width: 200px;
+    aspect-ratio: 1;
+    background: #FFF4FF;
+    border-radius: 100%;
+    z-index: -1;
+  }
+
   h6 {
     font-size: 18px;
     font-weight: bold;
@@ -157,12 +171,11 @@
       z-index: 5;
 
       li {
-        margin-left: -20px;
+        margin-left: -16px;
 
         img {
           width: 50px;
           border-radius: 100%;
-          margin-right: 10px;
         }
       }
     }
